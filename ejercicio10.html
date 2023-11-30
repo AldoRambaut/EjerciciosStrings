@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Ejercicio 10</title>
+    <script>
+        function validarNumero(numero) {
+            var arrayNumero = numero.toString().split('');
+            var capicua = true;
+            var indiceFinal = arrayNumero.length -1;
+            for (let index = 0; index < arrayNumero.length / 2; index++) {
+                console.log((arrayNumero[index] == arrayNumero[indiceFinal]));
+                if (!(arrayNumero[index] == arrayNumero[indiceFinal])) {
+                    capicua = false;
+                }
+                indiceFinal--;
+            }
+            return capicua;
+        }
+        alert(validarNumero(prompt('Ingrese un numero para validar')));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

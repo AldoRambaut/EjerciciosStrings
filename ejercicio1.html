@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Ejercicio 1</title>
+    <script>
+        let nombreCompleto = prompt(`Ingrese su nombre completo`);
+        function capitalizarNombre(nombre) {
+            let partesDelNombre = nombre.toLowerCase().split(" ");
+            for (let index = 0; index < partesDelNombre.length; index++) {
+                let primeraLetra = partesDelNombre[index].charAt(0).toUpperCase();
+                let restoDeLaPalabra = partesDelNombre[index].slice(1);
+                partesDelNombre[index] = primeraLetra + restoDeLaPalabra;
+                console.log(partesDelNombre[index]);
+            }
+            return partesDelNombre.join(" ");
+        }
+        
+        document.write(`<p>Nombre en Mayusculas: ${nombreCompleto.toUpperCase()}</p>`);
+        document.write(`<p>Nombre en Minusculas: ${nombreCompleto.toLowerCase()}</p>`);
+        document.write(`<p>Nombre en Primera mayuscula: ${capitalizarNombre(nombreCompleto)}</p>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings Ejercicio 3</title>
+    <script>
+        var telefono = prompt(`Ingrese numero de telefono incluyendo prefijo y extension`);
+        var primerIndice = telefono.indexOf('-');
+        var ultimoIndice = telefono.lastIndexOf('-');
+        alert(`El numero con prefijo y extension es ${telefono}\ny el numero sin prefijo y estension es ${telefono.substring(primerIndice + 1, ultimoIndice)}`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
